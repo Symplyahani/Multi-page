@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="profile.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <div class="profile-header">
+            <figure>
+                <img src="media/profile-card-img.jpg" 
+                alt="photo of merlyn" 
+                data-testid="test-user-avatar"
+                class="avatar">
+            </figure>
+            <h2 data-testid="test-user-name">Merlyn Elechor</h2>
+            <p class="role">Frontend Developer</p>
+            <button class="btn-contact" id="contactBtn">CONTACT ME</button>
+            <p class="time">Current Time (ms):<span id="user-time" data-testid="test-user-time"></span></p>
+        </div>
+        <main data-testid="test-about-page">
+            <section id="about" data-testid="test-about-bio">
+                <div class="profile-content">
+                    <h3>ABOUT</h3>
+                    <p class="bio">I'm a Frontend Developer passionate about creating clean, responsive,
+                        and user-friendly web interfaces. I love turning ideas into interactive
+                        experiences using HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+            </section>
+            <section data-testid="test-about-goals">
+                <h3>GOALS IN THIS PROGRAM</h3>
+                <p class="otherp">To build strong foundational skills and elaborate on real world problems.</p>
+            </section>
+            <section data-testid="test-about-confidence">
+                <h3>AREAS OF LOW CONFIDENCE</h3>
+                <p class="otherp">I'm improving my confidence in JavaScript logic and debugging.</p>
+            </section>
+            <section data-testid="test-about-future-note">
+                <h3>NOTE TO FUTURE SELF</h3>
+                <p class="otherp">Keep learning, stay curious, and never be afraid to ask questions.</p>
+            </section>
+            <section data-testid="test-about-extra">
+                <h3>EXTRA THOUGHTS</h3>
+                <p class="otherp">This journey is tough, but growth happens outside your comfort zone.</p>
+            </section>
+        </main>
+        <div class="socials" data-testid="test-user-social-links">
+            <a href="https://www.facebook.com/share/1W1EzveFGC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                <img src="media/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://www.instagram.com/merlyn_ahani?igsh=MWNkMTIwZzJsbnh3&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                <img src="media/instagram.png" alt="instagram icon">
+            </a>
+            <a href="https://x.com/bee_ahani?s=21&t=IPttyjfxh4AskNBbNen1yw" target="_blank" rel="noopener noreferrer">
+                <img src="media/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.linkedin.com/in/merlynelechor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                <img src="media/linkedin.png" alt="linkedin icon">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="tab active">ABOUT</a>
+            <a href="hobbies.html" class="tab" data-testid="test-user-hobbies" role="tab" aria-selected="false">HOBBIES</a>
+            <a href="dislikes.html" class="tab" data-testid="test-user-dislikes" role="tab" aria-selected="false">DISLIKES</a>
+        </nav>
+    </article>
+<script src="profile.js"></script>
+</body>
+</html>

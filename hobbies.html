@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="profile.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <div class="profile-header">
+            <figure class="avatar">
+                <img src="media/profile-card-img.jpg" 
+                alt="photo of merlyn" 
+                data-testid="test-user-avatar"
+                class="avatar">
+            </figure>
+            <h2 data-testid="test-user-name">Merlyn Elechor</h2>
+            <p class="role">Frontend Developer</p>
+            <p class="time">Current Time (ms):<span id="user-time" data-testid="test-user-time"></span></p>
+        </div>
+        <section id="about">
+            <div class="profile-content">
+                <h3>HOBBIES</h3>
+                <ul>
+                    <li>Coding mini projects</li>
+                    <li>Listening to music</li>
+                    <li>Learning new skills</li>
+                    <li>Exploring crypto communities</li>
+                </ul>
+            </div>
+        </section>
+        <div class="socials" data-testid="test-user-social-links">
+            <a href="https://www.facebook.com/share/1W1EzveFGC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                <img src="media/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://www.instagram.com/merlyn_ahani?igsh=MWNkMTIwZzJsbnh3&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                <img src="media/instagram.png" alt="instagram icon">
+            </a>
+            <a href="https://x.com/bee_ahani?s=21&t=IPttyjfxh4AskNBbNen1yw" target="_blank" rel="noopener noreferrer">
+                <img src="media/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.linkedin.com/in/merlynelechor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                <img src="media/linkedin.png" alt="linkedin icon">
+            </a>
+        </div>
+        <nav role="tablist" aria-label="profile-tabs">
+            <a href="index.html" class="tab">ABOUT</a>
+            <a href="hobbies.html" class="tab active" data-testid="test-user-hobbies">HOBBIES</a>
+            <a href="dislikes.html" class="tab" data-testid="test-user-dislikes">DISLIKES</a>
+        </nav>
+    </article>
+<script src="profile.js"></script>
+</body>
+</html>
